@@ -1,5 +1,6 @@
 .section {
-  width: 46rem;
+  width: 100%;
+  max-width: 46rem;
   height: 28.1875rem;
   margin-top: 4rem;
   display: flex;
@@ -17,7 +18,8 @@
   margin-bottom: 1.5rem;
 }
 
-.created, .done{
+.created,
+.done {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,8 +32,8 @@
   color: var(--blue);
 }
 
-.done{
-  color: var(--purple)
+.done {
+  color: var(--purple);
 }
 
 .counter {
@@ -66,4 +68,21 @@
 .text {
   text-align: center;
   color: var(--gray-300);
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%; 
+    height: auto; 
+    margin-top: 2rem; 
+  }
+}
+
+@media (max-width: 414px) {
+  .section {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
 }

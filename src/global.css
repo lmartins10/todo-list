@@ -47,3 +47,24 @@ button {
   font-weight: 400;
   font-size: 1rem;
 }
+
+/* Estilos para telas pequenas (ex: smartphones) */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilos para telas médias (ex: tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+/* Estilos para telas grandes (ex: desktops) */
+@media (min-width: 1025px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
